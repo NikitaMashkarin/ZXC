@@ -1,0 +1,23 @@
+﻿<Page x:Class="WpfApp3.AllOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Title="AllOrderPage">
+
+    <Grid>
+        <DataGrid x:Name="All" AutoGenerateColumns="False" HeadersVisibility="Column">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="*"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="RoomId" Binding="{Binding RoomId}" Width="*"/>
+                <DataGridTextColumn Header="OrderStatusId" Binding="{Binding OrderStatusId}" Width="*"/>
+                <DataGridTextColumn Header="Text" Binding="{Binding Text}" Width="*"/>
+                <DataGridTextColumn Header="Audio" Binding="{Binding Audio}" Width="*"/>
+                <DataGridTextColumn Header="CountOfClient" Binding="{Binding CountOfClient}" Width="*"/>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
